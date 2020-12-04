@@ -3,6 +3,13 @@ const Schema = mongoose.Schema;
 
 const ResistanceSchema = new Schema({
     
+    ExerciseType: {
+        type: String,
+        trim: true,
+        required: true
+    },
+
+
     ExerciseName: {
         type: String,
         trim: true,

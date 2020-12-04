@@ -19,7 +19,7 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", { useNewUrlParser: true });
 
 app.get('/', function(req, res){
-    res.send('index.html')
+    res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 
